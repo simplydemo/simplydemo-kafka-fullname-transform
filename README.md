@@ -1,6 +1,7 @@
 # simplydemo-kafka-fullname-transform
 This is a sample that implements a custom Transform module used in the Kafka connector.
 
+<br>
 
 ## Getting Started
 
@@ -8,6 +9,7 @@ You can provision data from Source to Target through various pipeline channels o
 In particular, using [Debezium](https://debezium.io/) as an open source for CDC (Change Data Capture), 
 you can easily implement a streaming integration platform for various use cases.
 
+<br>
 
 ## Git
 
@@ -15,11 +17,15 @@ you can easily implement a streaming integration platform for various use cases.
 git clone https://github.com/simplydemo/simplydemo-kafka-fullname-transform.git
 ```
 
+<br>
+
 ## Build
 
 ```
 mvn clean package -DskipTests=true
 ```
+
+<br>
 
 ## Usage Kafka Connect like Debezium
 
@@ -46,6 +52,7 @@ Below is the configuration of FullNameTransform, which merges the first_name and
 }
 ```
 
+<br>
 
 ## Install
 
@@ -63,8 +70,13 @@ systemctl restart kafka-connect
 
 - Verify plugin loaded: Check Kafka Connect logs to see if `FullNameTransform` is loaded
 
+```
+tail -f connect.log
+```
 
-### Reference Documentation
+<br>
+
+## Reference Documentation
 For further reference, please consider the following sections:
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
